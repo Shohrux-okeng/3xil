@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Roboto;
+    src: url("");
+
+}
+@import "tailwindcss";
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+@theme {
+  --color-primary: #4CAF4F;
+  --color-secondary: #F5F7FA;
+  --color-laylo: red;
+  --font-libre:"Libre Franklin";
+  --font-tention:"IBM Plex Mono";
+  --font-roboto: Roboto,  "sans-serif";
+  --color-grey:#717171;
+  --color-salom: #4D4D4D;
+  --color-fet:#021206;
+  --font-poppins: "Poppins", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "DINPro", sans-serif;
+  --font3: "Source Han Sans SC", sans-serif;
+  --font4: "Gilroy", sans-serif;
+  --font5: "SF Pro Text", sans-serif;
+}
+
+
