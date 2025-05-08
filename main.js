@@ -24,3 +24,9 @@
 //   let arr = [2, 1, 3];
 //   console.log(okay(arr));
   
+6
+
+// function combineAndReverse(arr1, arr2) {
+//   return Number(),(arr1.join('') + '' + arr2.join(',')).split('').reverse();
+// }
+// console.log(combineAndReverse([1, 2], [4]));
