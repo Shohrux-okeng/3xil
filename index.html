@@ -4,133 +4,300 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="relative">
-      <div class="absolute inset-0 z-0">
-        <img
-          src="./assets/IMAGE (7).png"
-          alt=""
-          class="w-full h-full object-cover"
-        />
-      </div>
 
+    <div
+      class="bg-cover bg-center h-[400px] md:h-[500px]"
+      style="background-image: url('/assets/hero\ image.png')"
+    >
       <header
-        class="relative z-10 flex items-center justify-between px-4 py-4 md:px-12"
+        class="flex flex-col md:flex-row justify-between items-center text-white px-4 md:px-8 py-4 container md:pl-[60px]"
       >
-        <img src="./assets/IMAGE (8).png" alt="" class="h-8 md:h-10" />
+        <div class="flex items-center space-x-2 mb-4 md:mb-0">
+          <img src="./assets/LOGO.png" alt="Logo" class="h-10 md:h-auto" />
+        </div>
+
         <nav
-          class="hidden md:flex items-center space-x-6 text-white font-libre"
+          class="flex space-x-3 md:space-x-6 text-xs md:text-sm font-semibold uppercase mb-4 md:mb-0"
         >
-          <a href="" class="hover:text-gray-300">Features</a>
-          <a href="" class="hover:text-gray-300">Premium</a>
-          <a href="" class="hover:text-gray-300">Pricing</a>
-          <a href="" class="hover:text-gray-300">About</a>
-          <div class="h-1 w-1 bg-white rounded-full"></div>
-          <a href="" class="hover:text-gray-300">Sign in</a>
-          <a
-            href=""
-            class=" text-black px-4 py-2 rounded hover:bg-gray-200"
-            >Get Started</a
-          >
+          <a href="" class="hover:text-orange-500">Главная</a>
+          <a href="" class="hover:text-orange-500">Меню</a>
+          <a href="" class="hover:text-orange-500">О нас</a>
+          <a href="" class="hover:text-orange-500">Бронь</a>
+          <i class="fa-solid fa-cart-shopping"></i>
         </nav>
-        <button class="md:hidden text-white text-2xl">☰</button>
+
+        <div
+          class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4 md:mr-[50px]"
+        >
+          <div class="border-l pl-4 border-gray-600 hidden md:block">
+            <p class="text-sm font-bold text-[#fff] font-Open Sans">
+              <i class="fa-solid fa-phone-volume"></i>+999-888-76-54
+            </p>
+            <p class="text-xs text-gray-300">
+              Свяжитесь с нами для <br />
+              бронирования
+            </p>
+          </div>
+          <button
+            class="bg-[#ff7400] w-full md:w-[157px] h-[47PX] hover:bg-orange-600 text-white px-4 py-2 rounded text-sm font-semibold"
+          >
+            ЗАКАЗ СТОЛИКА
+          </button>
+        </div>
       </header>
 
-      <nav
-        id="mobile-nav"
-        class="md:hidden hidden absolute z-20 top-16 left-0 w-full bg-black bg-opacity-80 text-white px-6 py-4 space-y-2 font-libre"
+      <section
+        class="text-white py-10 md:py-20 px-4 md:px-8 bg-cover bg-center"
       >
-        <a href="" class="block">Features</a>
-        <a href="" class="block">Premium</a>
-        <a href="" class="block">Pricing</a>
-        <a href="" class="block">About</a>
-        <a href="" class="block">Sign in</a>
-        <a
-          href=""
-          class="block bg-white text-black px-4 py-2 rounded hover:bg-gray-200"
-          >Get Started</a
-        >
-      </nav>
-
-      <div
-        class="relative z-10 flex flex-col items-center justify-center h-screen text-center px-4"
-      >
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
-          Propel your business.
-        </h1>
-        <p class="text-lg md:text-xl text-white mb-8 max-w-2xl">
-          Propel comes with everything you need to get your business rolling.
-        </p>
-        <a
-          href=""
-          class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md text-lg font-medium transition"
-          >Get Started</a
-        >
-      </div>
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-[#d67e35] text-xl md:text-2xl lg:text-3xl mb-2 text-center md:text-left font-Tinos"
+          >
+            Добро пожаловать в
+          </h2>
+          <h1
+            class="text-[#d67e35] text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left font-Tinos"
+          >
+            Наш ресторан
+          </h1>
+          <div class="flex items-center justify-center md:justify-start mb-6">
+            <span class="w-8 md:w-12 h-px bg-white mr-4"></span>
+            <span class="text-xs md:text-sm uppercase tracking-wider text-white"
+              >Дом лучшей еды</span
+            >
+            <span class="w-8 md:w-12 h-px bg-white ml-4"></span>
+          </div>
+          <div class="text-center md:text-left">
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded h-[40px] md:ml-[60px]"
+            >
+              VIEW MENU
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <section class="py-16 px-4 md:px-12 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <div class="mb-10">
-          <h2 class="text-2xl font-bold">
-            Promoting your business and services
-          </h2>
-          <p class="text-lg text-[#999999] mt-2">
-            A responsive, multi-page business template with everything you need
-            propel your business.
+    <section class="bg-white py-10 md:py-16 px-4">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8 md:gap-[50px]"
+      >
+        <div class="bg-white p-6 shadow-xl">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <img src="./assets/Mask Group.png" alt="" class="h-16 w-auto" />
+          </div>
+          <h3 class="text-xl text-[#2c2c2c] font-semibold mb-2">
+            Магическая <span class="text-[#bc9060]">Атмосфера</span>
+          </h3>
+          <p class="text-[#656363] font-Thinos text-base md:text-[25px]">
+            В нашем заведении царит магическая атмосфера<br
+              class="hidden md:block"
+            />
+            наполненная вкусными ароматами
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="p-6 border border-gray-100 rounded-lg">
-            <img src="./assets/Group (2).png" alt="" class="w-12 h-12 mb-4" />
-            <h3 class="text-xl font-semibold mb-2">Pro ad constituto</h3>
-            <p class="text-[#999999]">
-              Ne usu illud aliquius abhor reant, partiendo scriptorem mel ne.
-            </p>
+        <div class="bg-white p-6 shadow-xl border-y-white">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <img src="./assets/Mask Group.png" alt="" class="h-16 w-auto" />
           </div>
-          <div class="p-6 border border-gray-100 rounded-lg">
-            <img src="./assets/Group (3).png" alt="" class="w-12 h-12 mb-4" />
-            <h3 class="text-xl font-semibold mb-2">Eam commodo</h3>
-            <p class="text-[#999999]">
-              Fuisset intellegat delicatissimi ex mea. Cu probo integre nec.
-            </p>
+          <h3 class="text-xl text-[#2c2c2c] font-semibold mb-2">
+            Лучшее качество<span class="text-[#bc9060]">Еды</span>
+          </h3>
+          <p class="text-[#656363] font-Thinos text-base md:text-[25px]">
+            Качество нашей <br class="hidden md:block" />
+            Еды - отменное!
+          </p>
+        </div>
+
+        <div class="bg-white p-6 shadow-xl">
+          <div class="text-orange-500 mb-4 flex justify-center">
+            <img src="./assets/Mask Group.png" alt="" class="h-16 w-auto" />
           </div>
-          <div class="p-6 border border-gray-100 rounded-lg">
-            <img src="./assets/IMAGE (9).png" alt="" class="w-12 h-12 mb-4" />
-            <h3 class="text-xl font-semibold mb-2">Reformidans eis</h3>
-            <p class="text-[#999999]">
-              Facer nostro causae ei sed. Vix ex quidam detraxit, vis ad nostro
-              laoreet.
+          <h3 class="text-xl text-[#2c2c2c] font-semibold mb-2">
+            Недорогая <span class="text-[#bc9060]">Еда</span>
+          </h3>
+          <p class="text-[#656363] font-Thinos text-base md:text-[25px]">
+            В нашем заведении царит магическая атмосфера<br
+              class="hidden md:block"
+            />
+            наполненная вкусными ароматами
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs container">
+      <div class="container mx-auto max-w-6xl py-8 md:py-12 px-4">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
+            <h1
+              class="text-3xl md:text-4xl font-bold mb-6 text-[#000] text-center"
+            >
+              Наша <span class="text-[#d67e34]">История</span>
+            </h1>
+
+            <p
+              class="text-[#656363] mb-8 md:mb-12 leading-relaxed text-center text-sm md:text-base"
+            >
+              Как и у любого другого самобытного места, у нас есть
+              <br class="hidden md:block" />
+              своя, особая история. Идея ресторана пришла
+              <br class="hidden md:block" />
+              основателям неожиданно. Во время прогулки по лесу
+              <br class="hidden md:block" />
+              создатель нашего ресторана застрял в сотнях
+              <br class="hidden md:block" />
+              километров от ближайшего населенного пункта. Вдали
+              <br class="hidden md:block" />
+              от цивилизации и связи им пришлось навремя
+              <br class="hidden md:block" />
+              обустровать себе нехитрый быт, добывать и готовить себе еду.
             </p>
+
+            <div class="flex text-center justify-center gap-4 md:gap-[70px]">
+              <div class="flex flex-col">
+                <span class="text-2xl md:text-4xl text-[#bc9060]">93</span>
+                <span class="text-gray-800 text-sm md:text-base">Напитки</span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="text-2xl md:text-4xl text-[#bc9060]">206</span>
+                <span class="text-gray-800 text-sm md:text-base">Еда</span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="text-2xl md:text-4xl text-[#bc9060]">71</span>
+                <span class="text-gray-800 text-sm md:text-base">Закуски</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 relative h-[300px] md:h-[400px]">
+            <img
+              src="./assets/images.png"
+              alt=""
+              class="w-full h-full object-contain md:object-cover"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 px-4 md:px-12 text-center bg-gray-50">
-      <img
-        src="./assets/IMAGE (10).png"
-        alt=""
-        class="mx-auto w-full max-w-5xl"
-      />
-      <div class="mt-10">
-        <p class="text-xl font-bold">Illud decore voluptaria has at.</p>
-        <p class="text-[#999999] mt-4 text-base md:text-lg">
-          Hinc invenire atomorum no vel. Ut vis nullam blandit neglegentur,<br
-            class="hidden md:block"
-          />
-          omittam perpetua voluptatum qui eu. Iusto laoreet suscipit vis ad,<br
-            class="hidden md:block"
-          />
-          ad ferri tempor duo.
-        </p>
+    <section class="eats container">
+      <div class="h-[200px] md:h-[300px] relative overflow-hidden">
+        <img
+          src="./assets/delicious-1866631_1920 1.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 flex items-center">
+          <div
+            class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center"
+          >
+            <div class="max-w-xl mb-4 md:mb-0 text-center md:text-left">
+              <h2
+                class="text-xl md:text-3xl lg:text-4xl font-Tinos text-[#d67e34] leading-tight"
+              >
+                Отпразднуйте в одном из самых лучших ресторанов.
+              </h2>
+
+              <p
+                class="text-[#fff] font-Open Sans text-sm md:text-lg mt-2 md:mt-3"
+              >
+                Только в этом месяце бизнес-ланч от 250 ₽
+              </p>
+            </div>
+
+            <div class="md:pr-[40px]">
+              <a
+                href="#"
+                class="inline-block bg-[#ff7400] hover:bg-orange-600 text-white font-bold py-2 px-4 md:px-6 text-xs md:text-sm uppercase"
+              >
+                ЗАКАЗ СТОЛИКА
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <script src="./main.js"></script>
+    <section class="end container">
+      <div class="max-w-6xl mx-auto mt-16 md:mt-[132px] px-4">
+        <h1
+          class="text-2xl md:text-3xl lg:text-[50px] font-serif text-center mb-6 md:mb-8 text-[#000]"
+        >
+          Наши <span class="text-[#d67e34]">Блюда</span>
+        </h1>
+        <div class="flex flex-col md:flex-row gap-8 mt-6 md:mt-[32px]">
+          <div class="flex-1 flex justify-center md:justify-start">
+            <img
+              src="./assets/pizza-4968645_1920 (1) 1.png"
+              class="w-full max-w-[345px] md:max-w-[445px] h-auto md:h-[450px]"
+              alt=""
+            />
+          </div>
+          <div class="flex-1 flex flex-col justify-center gap-6">
+            <div class="flex items-center">
+              <img
+                src="./assets/Mask Group (1).png"
+                class="w-10 h-10 md:w-auto md:h-auto"
+                alt=""
+              />
+              <div
+                class="flex-1 flex justify-between items-center border-b border-dashed border-gray-400 pb-2"
+              >
+                <span class="text-base md:text-lg ml-2 md:ml-[30px]"
+                  >Гамбургер мини</span
+                >
+                <span class="text-base md:text-lg">220 ₽</span>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./assets/Mask Group (1).png"
+                class="w-10 h-10 md:w-auto md:h-auto"
+                alt=""
+              />
+              <div
+                class="flex-1 flex justify-between items-center border-b border-dashed border-gray-400 pb-2"
+              >
+                <span class="text-base md:text-lg ml-2 md:ml-[30px]"
+                  >Гамбургер мини</span
+                >
+                <span class="text-base md:text-lg">220 ₽</span>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./assets/Mask Group (1).png"
+                class="w-10 h-10 md:w-auto md:h-auto"
+                alt=""
+              />
+              <div
+                class="flex-1 flex justify-between items-center border-b border-dashed border-gray-400 pb-2"
+              >
+                <span class="text-base md:text-lg ml-2 md:ml-[30px]"
+                  >Гамбургер мини</span
+                >
+                <span class="text-base md:text-lg">220 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <script src="./main.js"></script>
   </body>
 </html>
